@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CDKStack | @pennlabs/kraken</title>
+	<title>PyPIPublishStack | @pennlabs/kraken</title>
 	<meta name="description" content="Documentation for @pennlabs/kraken">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,19 +56,27 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_cdk_.html">&quot;cdk&quot;</a>
+					<a href="../modules/_pypi_.html">&quot;pypi&quot;</a>
 				</li>
 				<li>
-					<a href="_cdk_.cdkstack.html">CDKStack</a>
+					<a href="_pypi_.pypipublishstack.html">PyPIPublishStack</a>
 				</li>
 			</ul>
-			<h1>Class CDKStack</h1>
+			<h1>Class PyPIPublishStack</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A stack to test a PyPI package on all branches as well as publish the package when
+						a commit has a semver tag.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -76,7 +84,7 @@
 						<span class="tsd-signature-type">Stack</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">CDKStack</span>
+								<span class="target">PyPIPublishStack</span>
 							</li>
 						</ul>
 					</li>
@@ -95,16 +103,16 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_cdk_.cdkstack.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_pypi_.pypipublishstack.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_cdk_.cdkstack.html#onprepare" class="tsd-kind-icon">on<wbr>Prepare</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_cdk_.cdkstack.html#onsynthesize" class="tsd-kind-icon">on<wbr>Synthesize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_cdk_.cdkstack.html#onvalidate" class="tsd-kind-icon">on<wbr>Validate</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_cdk_.cdkstack.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pypi_.pypipublishstack.html#onprepare" class="tsd-kind-icon">on<wbr>Prepare</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_pypi_.pypipublishstack.html#onsynthesize" class="tsd-kind-icon">on<wbr>Synthesize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pypi_.pypipublishstack.html#onvalidate" class="tsd-kind-icon">on<wbr>Validate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pypi_.pypipublishstack.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
@@ -116,32 +124,46 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new CDKStack<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Construct</span>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, config<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_cdk_.cdkpublishprops.html" class="tsd-signature-type">CDKPublishProps</a>, overrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WorkflowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_cdk_.cdkstack.html" class="tsd-signature-type">CDKStack</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>PyPIPublish<wbr>Stack<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Construct</span>, config<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_pypi_.pypipublishstackprops.html" class="tsd-signature-type">PyPIPublishStackProps</a>, overrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WorkflowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_pypi_.pypipublishstack.html" class="tsd-signature-type">PyPIPublishStack</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides Stack.__constructor</p>
 								<ul>
-									<li>Defined in src/cdk.ts:10</li>
+									<li>Defined in src/pypi.ts:19</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>scope: <span class="tsd-signature-type">Construct</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>cdkactions App instance.</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5>id: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <a href="../interfaces/_cdk_.cdkpublishprops.html" class="tsd-signature-type">CDKPublishProps</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <a href="../interfaces/_pypi_.pypipublishstackprops.html" class="tsd-signature-type">PyPIPublishStackProps</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Optional configuration for the stack.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> overrides: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WorkflowProps</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Optional overrides for the workflow.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_cdk_.cdkstack.html" class="tsd-signature-type">CDKStack</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_pypi_.pypipublishstack.html" class="tsd-signature-type">PyPIPublishStack</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -290,7 +312,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_application_.html">&quot;application&quot;</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_cdk_.html">&quot;cdk&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -305,6 +327,9 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_index_.html">&quot;index&quot;</a>
 					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_pypi_.html">&quot;pypi&quot;</a>
+					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_react_.html">&quot;react&quot;</a>
 					</li>
@@ -315,29 +340,29 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="_cdk_.cdkstack.html" class="tsd-kind-icon">CDKStack</a>
+						<a href="_pypi_.pypipublishstack.html" class="tsd-kind-icon">PyPIPublish<wbr>Stack</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_cdk_.cdkstack.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_pypi_.pypipublishstack.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_cdk_.cdkstack.html#onprepare" class="tsd-kind-icon">on<wbr>Prepare</a>
+								<a href="_pypi_.pypipublishstack.html#onprepare" class="tsd-kind-icon">on<wbr>Prepare</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
-								<a href="_cdk_.cdkstack.html#onsynthesize" class="tsd-kind-icon">on<wbr>Synthesize</a>
+								<a href="_pypi_.pypipublishstack.html#onsynthesize" class="tsd-kind-icon">on<wbr>Synthesize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_cdk_.cdkstack.html#onvalidate" class="tsd-kind-icon">on<wbr>Validate</a>
+								<a href="_pypi_.pypipublishstack.html#onvalidate" class="tsd-kind-icon">on<wbr>Validate</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_cdk_.cdkstack.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+								<a href="_pypi_.pypipublishstack.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_cdk_.cdkpublishprops.html" class="tsd-kind-icon">CDKPublish<wbr>Props</a>
+						<a href="../interfaces/_pypi_.pypipublishstackprops.html" class="tsd-kind-icon">PyPIPublish<wbr>Stack<wbr>Props</a>
 					</li>
 				</ul>
 			</nav>

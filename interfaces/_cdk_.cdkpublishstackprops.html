@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeployJobProps | @pennlabs/kraken</title>
+	<title>CDKPublishStackProps | @pennlabs/kraken</title>
 	<meta name="description" content="Documentation for @pennlabs/kraken">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_deploy_.html">&quot;deploy&quot;</a>
+					<a href="../modules/_cdk_.html">&quot;cdk&quot;</a>
 				</li>
 				<li>
-					<a href="_deploy_.deployjobprops.html">DeployJobProps</a>
+					<a href="_cdk_.cdkpublishstackprops.html">CDKPublishStackProps</a>
 				</li>
 			</ul>
-			<h1>Interface DeployJobProps</h1>
+			<h1>Interface CDKPublishStackProps</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Optional props to configure the deploy job.</p>
+						<p>Optional props to configure the CDK publish stack.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DeployJobProps</span>
+						<span class="target">CDKPublishStackProps</span>
 					</li>
 				</ul>
 			</section>
@@ -91,9 +91,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_deploy_.deployjobprops.html#defaultbranch" class="tsd-kind-icon">default<wbr>Branch</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_deploy_.deployjobprops.html#deploytag" class="tsd-kind-icon">deploy<wbr>Tag</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_deploy_.deployjobprops.html#image" class="tsd-kind-icon">image</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_cdk_.cdkpublishstackprops.html#defaultbranch" class="tsd-kind-icon">default<wbr>Branch</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_cdk_.cdkpublishstackprops.html#nodeversion" class="tsd-kind-icon">node<wbr>Version</a></li>
 							</ul>
 						</section>
 					</div>
@@ -107,12 +106,12 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Branch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/deploy.ts:24</li>
+							<li>Defined in src/cdk.ts:13</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Branch to limit deploys to.</p>
+							<p>Branch to restrict publishing to</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>default</dt>
@@ -122,41 +121,21 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="deploytag" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> deploy<wbr>Tag</h3>
-					<div class="tsd-signature tsd-kind-icon">deploy<wbr>Tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="nodeversion" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> node<wbr>Version</h3>
+					<div class="tsd-signature tsd-kind-icon">node<wbr>Version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/deploy.ts:12</li>
+							<li>Defined in src/cdk.ts:19</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Deploy tag to set in icarus.</p>
+							<p>Node version to test the cdk application in</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>default</dt>
-							<dd><p>current git sha</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="image" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> image</h3>
-					<div class="tsd-signature tsd-kind-icon">image<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in src/deploy.ts:18</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Image to run the deploy job in.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>default</dt>
-							<dd><p>pennlabs/helm-tools</p>
+							<dd><p>&quot;14&quot;</p>
 							</dd>
 						</dl>
 					</div>
@@ -172,10 +151,10 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_application_.html">&quot;application&quot;</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_cdk_.html">&quot;cdk&quot;</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_deploy_.html">&quot;deploy&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -198,21 +177,18 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_deploy_.deployjob.html" class="tsd-kind-icon">Deploy<wbr>Job</a>
+						<a href="../classes/_cdk_.cdkpublishstack.html" class="tsd-kind-icon">CDKPublish<wbr>Stack</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_deploy_.deployjobprops.html" class="tsd-kind-icon">Deploy<wbr>Job<wbr>Props</a>
+						<a href="_cdk_.cdkpublishstackprops.html" class="tsd-kind-icon">CDKPublish<wbr>Stack<wbr>Props</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_deploy_.deployjobprops.html#defaultbranch" class="tsd-kind-icon">default<wbr>Branch</a>
+								<a href="_cdk_.cdkpublishstackprops.html#defaultbranch" class="tsd-kind-icon">default<wbr>Branch</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_deploy_.deployjobprops.html#deploytag" class="tsd-kind-icon">deploy<wbr>Tag</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_deploy_.deployjobprops.html#image" class="tsd-kind-icon">image</a>
+								<a href="_cdk_.cdkpublishstackprops.html#nodeversion" class="tsd-kind-icon">node<wbr>Version</a>
 							</li>
 						</ul>
 					</li>
