@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DjangoStack | @pennlabs/kraken</title>
+	<title>IntegrationTestsJob | @pennlabs/kraken</title>
 	<meta name="description" content="Documentation for @pennlabs/kraken">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_application_.html">&quot;application&quot;</a>
+					<a href="../modules/_integration_tests_.html">&quot;integration-tests&quot;</a>
 				</li>
 				<li>
-					<a href="_application_.djangostack.html">DjangoStack</a>
+					<a href="_integration_tests_.integrationtestsjob.html">IntegrationTestsJob</a>
 				</li>
 			</ul>
-			<h1>Class DjangoStack</h1>
+			<h1>Class IntegrationTestsJob</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,9 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A stack to deploy a standalone django project.</p>
+						<p>Creates a Job that utilizes a docker-compose file to run integration
+							tests.
+						TODO: not finished</p>
 					</div>
 				</div>
 			</section>
@@ -80,10 +82,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">Stack</span>
+						<span class="tsd-signature-type">CheckoutJob</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">DjangoStack</span>
+								<span class="target">IntegrationTestsJob</span>
 							</li>
 						</ul>
 					</li>
@@ -102,16 +104,23 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_application_.djangostack.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_integration_tests_.integrationtestsjob.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_integration_tests_.integrationtestsjob.html#id" class="tsd-kind-icon">id</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_application_.djangostack.html#onprepare" class="tsd-kind-icon">on<wbr>Prepare</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_application_.djangostack.html#onsynthesize" class="tsd-kind-icon">on<wbr>Synthesize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_application_.djangostack.html#onvalidate" class="tsd-kind-icon">on<wbr>Validate</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_application_.djangostack.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_integration_tests_.integrationtestsjob.html#onprepare" class="tsd-kind-icon">on<wbr>Prepare</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_integration_tests_.integrationtestsjob.html#onsynthesize" class="tsd-kind-icon">on<wbr>Synthesize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_integration_tests_.integrationtestsjob.html#onvalidate" class="tsd-kind-icon">on<wbr>Validate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_integration_tests_.integrationtestsjob.html#toghaction" class="tsd-kind-icon">toGHAction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_integration_tests_.integrationtestsjob.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
@@ -123,14 +132,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Django<wbr>Stack<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Construct</span>, config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_application_.djangostackprops.html" class="tsd-signature-type">DjangoStackProps</a>, overrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WorkflowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_application_.djangostack.html" class="tsd-signature-type">DjangoStack</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Integration<wbr>Tests<wbr>Job<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Workflow</span>, config<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_integration_tests_.integrationtestsjobprops.html" class="tsd-signature-type">IntegrationTestsJobProps</a>, overrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">JobProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_integration_tests_.integrationtestsjob.html" class="tsd-signature-type">IntegrationTestsJob</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides Stack.__constructor</p>
+								<p>Overrides CheckoutJob.__constructor</p>
 								<ul>
-									<li>Defined in src/application.ts:57</li>
+									<li>Defined in src/integration-tests.ts:22</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -138,33 +147,57 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>scope: <span class="tsd-signature-type">Construct</span></h5>
+									<h5>scope: <span class="tsd-signature-type">Workflow</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>cdkactions App instance.</p>
+											<p>cdkactions Workflow instance.</p>
 										</div>
 									</div>
 								</li>
 								<li>
-									<h5>config: <a href="../interfaces/_application_.djangostackprops.html" class="tsd-signature-type">DjangoStackProps</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <a href="../interfaces/_integration_tests_.integrationtestsjobprops.html" class="tsd-signature-type">IntegrationTestsJobProps</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>Configuration for the Django stack.</p>
+											<p>Configuration for the integration tests.</p>
 										</div>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> overrides: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WorkflowProps</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> overrides: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">JobProps</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>Optional overrides for the workflow.</p>
+											<p>Optional Overrides for the job.</p>
 										</div>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_application_.djangostack.html" class="tsd-signature-type">DjangoStack</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_integration_tests_.integrationtestsjob.html" class="tsd-signature-type">IntegrationTestsJob</a></h4>
 						</li>
 					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="id" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_deploy_.deployjob.html">DeployJob</a>.<a href="_deploy_.deployjob.html#id">id</a></p>
+						<ul>
+							<li>Defined in node_modules/cdkactions/lib/job.d.ts:256</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A unique identifier.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>stability</dt>
+							<dd><p>stable</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
@@ -178,7 +211,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_deploy_.deployjob.html">DeployJob</a>.<a href="_deploy_.deployjob.html#onprepare">onPrepare</a></p>
+								<p>Inherited from <a href="_cdk_.cdkpublishstack.html">CDKPublishStack</a>.<a href="_cdk_.cdkpublishstack.html#onprepare">onPrepare</a></p>
 								<ul>
 									<li>Defined in node_modules/constructs/lib/construct.d.ts:387</li>
 								</ul>
@@ -202,25 +235,26 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="onsynthesize" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Synthesize</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Synthesize<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ISynthesisSession</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_application_.djangostack.html">DjangoStack</a>.<a href="_application_.djangostack.html#onsynthesize">onSynthesize</a></p>
-								<p>Overrides <a href="_deploy_.deployjob.html">DeployJob</a>.<a href="_deploy_.deployjob.html#onsynthesize">onSynthesize</a></p>
+								<p>Inherited from <a href="_deploy_.deployjob.html">DeployJob</a>.<a href="_deploy_.deployjob.html#onsynthesize">onSynthesize</a></p>
 								<ul>
-									<li>Defined in node_modules/cdkactions/lib/stack.d.ts:26</li>
+									<li>Defined in node_modules/constructs/lib/construct.d.ts:397</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>A custom <code>onSynthesize</code> function to generate GH Action manifests.</p>
+									<p>Allows this construct to emit artifacts into the cloud assembly during synthesis.</p>
 								</div>
+								<p>This method is usually implemented by framework-level constructs such as <code>Stack</code> and <code>Asset</code>
+								as they participate in synthesizing the cloud assembly.</p>
 								<dl class="tsd-comment-tags">
 									<dt>stability</dt>
 									<dd><p>stable</p>
@@ -232,7 +266,7 @@
 								<li>
 									<h5>session: <span class="tsd-signature-type">ISynthesisSession</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Synthesis session.</p>
+										<p>The synthesis session.</p>
 									</div>
 								</li>
 							</ul>
@@ -249,7 +283,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_deploy_.deployjob.html">DeployJob</a>.<a href="_deploy_.deployjob.html#onvalidate">onValidate</a></p>
+								<p>Inherited from <a href="_cdk_.cdkpublishstack.html">CDKPublishStack</a>.<a href="_cdk_.cdkpublishstack.html#onvalidate">onValidate</a></p>
 								<ul>
 									<li>Defined in node_modules/constructs/lib/construct.d.ts:374</li>
 								</ul>
@@ -273,6 +307,34 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="toghaction" class="tsd-anchor"></a>
+					<h3>toGHAction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">toGHAction<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_deploy_.deployjob.html">DeployJob</a>.<a href="_deploy_.deployjob.html#toghaction">toGHAction</a></p>
+								<ul>
+									<li>Defined in node_modules/cdkactions/lib/job.d.ts:271</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts the job&#39;s configuration into a format that is GitHub Actions compatible.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>stability</dt>
+									<dd><p>stable</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="tostring" class="tsd-anchor"></a>
 					<h3>to<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -281,7 +343,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_deploy_.deployjob.html">DeployJob</a>.<a href="_deploy_.deployjob.html#tostring">toString</a></p>
+								<p>Inherited from <a href="_cdk_.cdkpublishstack.html">CDKPublishStack</a>.<a href="_cdk_.cdkpublishstack.html#tostring">toString</a></p>
 								<ul>
 									<li>Defined in node_modules/constructs/lib/construct.d.ts:363</li>
 								</ul>
@@ -308,9 +370,6 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-module">
-						<a href="../modules/_application_.html">&quot;application&quot;</a>
-					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_cdk_.html">&quot;cdk&quot;</a>
 					</li>
@@ -321,10 +380,19 @@
 						<a href="../modules/_django_.html">&quot;django&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="../modules/_django_project_.html">&quot;django-<wbr>project&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="../modules/_docker_.html">&quot;docker&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_index_.html">&quot;index&quot;</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_integration_tests_.html">&quot;integration-<wbr>tests&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_labs_application_.html">&quot;labs-<wbr>application&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_pypi_.html">&quot;pypi&quot;</a>
@@ -332,42 +400,48 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_react_.html">&quot;react&quot;</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_react_project_.html">&quot;react-<wbr>project&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_utils_.html">&quot;utils&quot;</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_application_.applicationstack.html" class="tsd-kind-icon">Application<wbr>Stack</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="_application_.djangostack.html" class="tsd-kind-icon">Django<wbr>Stack</a>
+						<a href="_integration_tests_.integrationtestsjob.html" class="tsd-kind-icon">Integration<wbr>Tests<wbr>Job</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_application_.djangostack.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_integration_tests_.integrationtestsjob.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_integration_tests_.integrationtestsjob.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_application_.djangostack.html#onprepare" class="tsd-kind-icon">on<wbr>Prepare</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
-								<a href="_application_.djangostack.html#onsynthesize" class="tsd-kind-icon">on<wbr>Synthesize</a>
+								<a href="_integration_tests_.integrationtestsjob.html#onprepare" class="tsd-kind-icon">on<wbr>Prepare</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_application_.djangostack.html#onvalidate" class="tsd-kind-icon">on<wbr>Validate</a>
+								<a href="_integration_tests_.integrationtestsjob.html#onsynthesize" class="tsd-kind-icon">on<wbr>Synthesize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_integration_tests_.integrationtestsjob.html#onvalidate" class="tsd-kind-icon">on<wbr>Validate</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_application_.djangostack.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+								<a href="_integration_tests_.integrationtestsjob.html#toghaction" class="tsd-kind-icon">toGHAction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_integration_tests_.integrationtestsjob.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_application_.applicationstackprops.html" class="tsd-kind-icon">Application<wbr>Stack<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_application_.djangostackprops.html" class="tsd-kind-icon">Django<wbr>Stack<wbr>Props</a>
+						<a href="../interfaces/_integration_tests_.integrationtestsjobprops.html" class="tsd-kind-icon">Integration<wbr>Tests<wbr>Job<wbr>Props</a>
 					</li>
 				</ul>
 			</nav>
@@ -383,10 +457,14 @@
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>

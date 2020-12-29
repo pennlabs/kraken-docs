@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeployJobProps | @pennlabs/kraken</title>
+	<title>DjangoProject | @pennlabs/kraken</title>
 	<meta name="description" content="Documentation for @pennlabs/kraken">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_deploy_.html">&quot;deploy&quot;</a>
+					<a href="../modules/_django_project_.html">&quot;django-project&quot;</a>
 				</li>
 				<li>
-					<a href="_deploy_.deployjobprops.html">DeployJobProps</a>
+					<a href="_django_project_.djangoproject.html">DjangoProject</a>
 				</li>
 			</ul>
-			<h1>Interface DeployJobProps</h1>
+			<h1>Class DjangoProject</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,8 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Optional props to configure the deploy job.</p>
+						<p>Creates a DjangoCheckJob and a DockerPublishJob to lint, test, build, and publish
+						a docker image of a django project. The jobs run sequentially.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +81,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DeployJobProps</span>
+						<span class="target">DjangoProject</span>
 					</li>
 				</ul>
 			</section>
@@ -89,76 +90,76 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_django_project_.djangoproject.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_deploy_.deployjobprops.html#defaultbranch" class="tsd-kind-icon">default<wbr>Branch</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_deploy_.deployjobprops.html#deploytag" class="tsd-kind-icon">deploy<wbr>Tag</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_deploy_.deployjobprops.html#image" class="tsd-kind-icon">image</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_django_project_.djangoproject.html#publishjobid" class="tsd-kind-icon">publish<wbr>Job<wbr>Id</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Django<wbr>Project<span class="tsd-signature-symbol">(</span>workflow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Workflow</span>, config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_django_project_.djangoprojectprops.html" class="tsd-signature-type">DjangoProjectProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_django_project_.djangoproject.html" class="tsd-signature-type">DjangoProject</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/django-project.ts:63</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>workflow: <span class="tsd-signature-type">Workflow</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>cdkaction Workflow instance.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>config: <a href="../interfaces/_django_project_.djangoprojectprops.html" class="tsd-signature-type">DjangoProjectProps</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Configuration for the django project,</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_django_project_.djangoproject.html" class="tsd-signature-type">DjangoProject</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="defaultbranch" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> default<wbr>Branch</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>Branch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="publishjobid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> publish<wbr>Job<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">publish<wbr>Job<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/deploy.ts:24</li>
+							<li>Defined in src/django-project.ts:63</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Branch to limit deploys to.</p>
+							<p>ID of the docker publish job.</p>
 						</div>
-						<dl class="tsd-comment-tags">
-							<dt>default</dt>
-							<dd><p>master</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="deploytag" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> deploy<wbr>Tag</h3>
-					<div class="tsd-signature tsd-kind-icon">deploy<wbr>Tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in src/deploy.ts:12</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Deploy tag to set in icarus.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>default</dt>
-							<dd><p>current git sha</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="image" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> image</h3>
-					<div class="tsd-signature tsd-kind-icon">image<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in src/deploy.ts:18</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Image to run the deploy job in.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>default</dt>
-							<dd><p>pennlabs/helm-tools</p>
-							</dd>
-						</dl>
 					</div>
 				</section>
 			</section>
@@ -172,13 +173,13 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_cdk_.html">&quot;cdk&quot;</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_deploy_.html">&quot;deploy&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_django_.html">&quot;django&quot;</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_django_project_.html">&quot;django-<wbr>project&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -209,27 +210,24 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_deploy_.deployjob.html" class="tsd-kind-icon">Deploy<wbr>Job</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_deploy_.deployjobprops.html" class="tsd-kind-icon">Deploy<wbr>Job<wbr>Props</a>
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="_django_project_.djangoproject.html" class="tsd-kind-icon">Django<wbr>Project</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_deploy_.deployjobprops.html#defaultbranch" class="tsd-kind-icon">default<wbr>Branch</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_django_project_.djangoproject.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_deploy_.deployjobprops.html#deploytag" class="tsd-kind-icon">deploy<wbr>Tag</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_deploy_.deployjobprops.html#image" class="tsd-kind-icon">image</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_django_project_.djangoproject.html#publishjobid" class="tsd-kind-icon">publish<wbr>Job<wbr>Id</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_django_project_.djangoprojectprops.html" class="tsd-kind-icon">Django<wbr>Project<wbr>Props</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -240,14 +238,15 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>

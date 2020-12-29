@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DjangoStackProps | @pennlabs/kraken</title>
+	<title>ReactProjectProps | @pennlabs/kraken</title>
 	<meta name="description" content="Documentation for @pennlabs/kraken">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_application_.html">&quot;application&quot;</a>
+					<a href="../modules/_react_project_.html">&quot;react-project&quot;</a>
 				</li>
 				<li>
-					<a href="_application_.djangostackprops.html">DjangoStackProps</a>
+					<a href="_react_project_.reactprojectprops.html">ReactProjectProps</a>
 				</li>
 			</ul>
-			<h1>Interface DjangoStackProps</h1>
+			<h1>Interface ReactProjectProps</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Props to configure the Django stack.</p>
+						<p>Props to configure the ReactProject.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DjangoStackProps</span>
+						<span class="target">ReactProjectProps</span>
 					</li>
 				</ul>
 			</section>
@@ -91,14 +91,13 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_application_.djangostackprops.html#checkoverrides" class="tsd-kind-icon">check<wbr>Overrides</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_application_.djangostackprops.html#checkprops" class="tsd-kind-icon">check<wbr>Props</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_application_.djangostackprops.html#deployoverrides" class="tsd-kind-icon">deploy<wbr>Overrides</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_application_.djangostackprops.html#deployprops" class="tsd-kind-icon">deploy<wbr>Props</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_application_.djangostackprops.html#djangoprojectname" class="tsd-kind-icon">django<wbr>Project<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_application_.djangostackprops.html#dockerimagename" class="tsd-kind-icon">docker<wbr>Image<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_application_.djangostackprops.html#dockeroverrides" class="tsd-kind-icon">docker<wbr>Overrides</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_application_.djangostackprops.html#dockerprops" class="tsd-kind-icon">docker<wbr>Props</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_react_project_.reactprojectprops.html#checkoverrides" class="tsd-kind-icon">check<wbr>Overrides</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_react_project_.reactprojectprops.html#checkprops" class="tsd-kind-icon">check<wbr>Props</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_react_project_.reactprojectprops.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_react_project_.reactprojectprops.html#imagename" class="tsd-kind-icon">image<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_react_project_.reactprojectprops.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_react_project_.reactprojectprops.html#publishoverrides" class="tsd-kind-icon">publish<wbr>Overrides</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_react_project_.reactprojectprops.html#publishprops" class="tsd-kind-icon">publish<wbr>Props</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,97 +111,93 @@
 					<div class="tsd-signature tsd-kind-icon">check<wbr>Overrides<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">JobProps</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/application.ts:31</li>
+							<li>Defined in src/react-project.ts:37</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Optional overrides for the django check job.</p>
+							<p>Optional overrides for the check job.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="checkprops" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> check<wbr>Props</h3>
-					<div class="tsd-signature tsd-kind-icon">check<wbr>Props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="_django_.djangocheckprops.html" class="tsd-signature-type">DjangoCheckProps</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">check<wbr>Props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="_react_.reactcheckjobprops.html" class="tsd-signature-type">ReactCheckJobProps</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/application.ts:26</li>
+							<li>Defined in src/react-project.ts:32</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Optional props to pass to the django check job.</p>
+							<p>Optional props to pass to the check job.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="deployoverrides" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> deploy<wbr>Overrides</h3>
-					<div class="tsd-signature tsd-kind-icon">deploy<wbr>Overrides<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">JobProps</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="id" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/application.ts:51</li>
+							<li>Defined in src/react-project.ts:16</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Optional overrides for the deploy job.</p>
+							<p>A custom id to append onto job name and ids. Useful when using
+							multiple instances of ReactProject in a single workflow.</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>no suffix</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="deployprops" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> deploy<wbr>Props</h3>
-					<div class="tsd-signature tsd-kind-icon">deploy<wbr>Props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="_deploy_.deployjobprops.html" class="tsd-signature-type">DeployJobProps</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="imagename" class="tsd-anchor"></a>
+					<h3>image<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">image<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/application.ts:46</li>
+							<li>Defined in src/react-project.ts:27</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Optional props to pass to the deploy job.</p>
+							<p>Docker image name to publish</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="djangoprojectname" class="tsd-anchor"></a>
-					<h3>django<wbr>Project<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">django<wbr>Project<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="path" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> path</h3>
+					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/application.ts:16</li>
+							<li>Defined in src/react-project.ts:22</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Name of the django project.</p>
+							<p>Location of the React project within the repo.</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>&quot;.&quot;</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="dockerimagename" class="tsd-anchor"></a>
-					<h3>docker<wbr>Image<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">docker<wbr>Image<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="publishoverrides" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> publish<wbr>Overrides</h3>
+					<div class="tsd-signature tsd-kind-icon">publish<wbr>Overrides<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">JobProps</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/application.ts:21</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Name of the docker image to publish.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="dockeroverrides" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> docker<wbr>Overrides</h3>
-					<div class="tsd-signature tsd-kind-icon">docker<wbr>Overrides<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">JobProps</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in src/application.ts:41</li>
+							<li>Defined in src/react-project.ts:47</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -212,12 +207,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="dockerprops" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> docker<wbr>Props</h3>
-					<div class="tsd-signature tsd-kind-icon">docker<wbr>Props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="_docker_.dockerpublishprops.html" class="tsd-signature-type">DockerPublishProps</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="publishprops" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> publish<wbr>Props</h3>
+					<div class="tsd-signature tsd-kind-icon">publish<wbr>Props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="_docker_.dockerpublishjobprops.html" class="tsd-signature-type">DockerPublishJobProps</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/application.ts:36</li>
+							<li>Defined in src/react-project.ts:42</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -234,9 +229,6 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-module">
-						<a href="../modules/_application_.html">&quot;application&quot;</a>
-					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_cdk_.html">&quot;cdk&quot;</a>
 					</li>
@@ -247,10 +239,19 @@
 						<a href="../modules/_django_.html">&quot;django&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="../modules/_django_project_.html">&quot;django-<wbr>project&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="../modules/_docker_.html">&quot;docker&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_index_.html">&quot;index&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_integration_tests_.html">&quot;integration-<wbr>tests&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_labs_application_.html">&quot;labs-<wbr>application&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_pypi_.html">&quot;pypi&quot;</a>
@@ -258,47 +259,44 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_react_.html">&quot;react&quot;</a>
 					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_react_project_.html">&quot;react-<wbr>project&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_utils_.html">&quot;utils&quot;</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_application_.applicationstack.html" class="tsd-kind-icon">Application<wbr>Stack</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_application_.djangostack.html" class="tsd-kind-icon">Django<wbr>Stack</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_application_.applicationstackprops.html" class="tsd-kind-icon">Application<wbr>Stack<wbr>Props</a>
+						<a href="../classes/_react_project_.reactproject.html" class="tsd-kind-icon">React<wbr>Project</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_application_.djangostackprops.html" class="tsd-kind-icon">Django<wbr>Stack<wbr>Props</a>
+						<a href="_react_project_.reactprojectprops.html" class="tsd-kind-icon">React<wbr>Project<wbr>Props</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_application_.djangostackprops.html#checkoverrides" class="tsd-kind-icon">check<wbr>Overrides</a>
+								<a href="_react_project_.reactprojectprops.html#checkoverrides" class="tsd-kind-icon">check<wbr>Overrides</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_application_.djangostackprops.html#checkprops" class="tsd-kind-icon">check<wbr>Props</a>
+								<a href="_react_project_.reactprojectprops.html#checkprops" class="tsd-kind-icon">check<wbr>Props</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_application_.djangostackprops.html#deployoverrides" class="tsd-kind-icon">deploy<wbr>Overrides</a>
+								<a href="_react_project_.reactprojectprops.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_application_.djangostackprops.html#deployprops" class="tsd-kind-icon">deploy<wbr>Props</a>
+								<a href="_react_project_.reactprojectprops.html#imagename" class="tsd-kind-icon">image<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_application_.djangostackprops.html#djangoprojectname" class="tsd-kind-icon">django<wbr>Project<wbr>Name</a>
+								<a href="_react_project_.reactprojectprops.html#path" class="tsd-kind-icon">path</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_application_.djangostackprops.html#dockerimagename" class="tsd-kind-icon">docker<wbr>Image<wbr>Name</a>
+								<a href="_react_project_.reactprojectprops.html#publishoverrides" class="tsd-kind-icon">publish<wbr>Overrides</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_application_.djangostackprops.html#dockeroverrides" class="tsd-kind-icon">docker<wbr>Overrides</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_application_.djangostackprops.html#dockerprops" class="tsd-kind-icon">docker<wbr>Props</a>
+								<a href="_react_project_.reactprojectprops.html#publishprops" class="tsd-kind-icon">publish<wbr>Props</a>
 							</li>
 						</ul>
 					</li>
@@ -316,6 +314,9 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
