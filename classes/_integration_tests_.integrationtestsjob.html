@@ -73,9 +73,10 @@
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>Creates a Job that utilizes a docker-compose file to run integration
-							tests.
-						TODO: not finished</p>
+						tests.</p>
 					</div>
+					<p>This job assumes a docker-compose file exists named <code>docker-compose.test.yaml</code> in
+					the root of the repo as well as a django service called <code>backend</code>.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -107,9 +108,10 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_integration_tests_.integrationtestsjob.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_integration_tests_.integrationtestsjob.html#finaljobid" class="tsd-kind-icon">final<wbr>Job<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_integration_tests_.integrationtestsjob.html#id" class="tsd-kind-icon">id</a></li>
 							</ul>
 						</section>
@@ -132,14 +134,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Integration<wbr>Tests<wbr>Job<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Workflow</span>, config<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_integration_tests_.integrationtestsjobprops.html" class="tsd-signature-type">IntegrationTestsJobProps</a>, overrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">JobProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_integration_tests_.integrationtestsjob.html" class="tsd-signature-type">IntegrationTestsJob</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Integration<wbr>Tests<wbr>Job<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Workflow</span>, config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_integration_tests_.integrationtestsjobprops.html" class="tsd-signature-type">IntegrationTestsJobProps</a>, overrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">JobProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_integration_tests_.integrationtestsjob.html" class="tsd-signature-type">IntegrationTestsJob</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides CheckoutJob.__constructor</p>
 								<ul>
-									<li>Defined in src/integration-tests.ts:22</li>
+									<li>Defined in src/integration-tests.ts:51</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -155,7 +157,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <a href="../interfaces/_integration_tests_.integrationtestsjobprops.html" class="tsd-signature-type">IntegrationTestsJobProps</a></h5>
+									<h5>config: <a href="../interfaces/_integration_tests_.integrationtestsjobprops.html" class="tsd-signature-type">IntegrationTestsJobProps</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Configuration for the integration tests.</p>
@@ -176,8 +178,23 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="finaljobid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> final<wbr>Job<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">final<wbr>Job<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/integration-tests.ts:51</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>ID of the final job (either this job, or the post integration publish job).</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="id" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
@@ -395,6 +412,9 @@
 						<a href="../modules/_labs_application_.html">&quot;labs-<wbr>application&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="../modules/_postintegrationimagepublishjob_.html">&quot;postintegrationimagepublishjob&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="../modules/_pypi_.html">&quot;pypi&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -417,6 +437,9 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_integration_tests_.integrationtestsjob.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_integration_tests_.integrationtestsjob.html#finaljobid" class="tsd-kind-icon">final<wbr>Job<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_integration_tests_.integrationtestsjob.html#id" class="tsd-kind-icon">id</a>
@@ -455,6 +478,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
