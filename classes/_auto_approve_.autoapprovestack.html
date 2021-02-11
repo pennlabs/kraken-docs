@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CDKPublishStack | @pennlabs/kraken</title>
+	<title>AutoApproveStack | @pennlabs/kraken</title>
 	<meta name="description" content="Documentation for @pennlabs/kraken">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_cdk_.html">&quot;cdk&quot;</a>
+					<a href="../modules/_auto_approve_.html">&quot;auto-approve&quot;</a>
 				</li>
 				<li>
-					<a href="_cdk_.cdkpublishstack.html">CDKPublishStack</a>
+					<a href="_auto_approve_.autoapprovestack.html">AutoApproveStack</a>
 				</li>
 			</ul>
-			<h1>Class CDKPublishStack</h1>
+			<h1>Class AutoApproveStack</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,8 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Test, upload code coverage for, and publish a cdk application.</p>
+						<p>Auto-approve PRs opened by dependabot. Used to fulfil requirements
+						needed to automatically merge using mergify</p>
 					</div>
 				</div>
 			</section>
@@ -83,7 +84,7 @@
 						<span class="tsd-signature-type">Stack</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">CDKPublishStack</span>
+								<span class="target">AutoApproveStack</span>
 							</li>
 						</ul>
 					</li>
@@ -102,16 +103,16 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_cdk_.cdkpublishstack.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_auto_approve_.autoapprovestack.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_cdk_.cdkpublishstack.html#onprepare" class="tsd-kind-icon">on<wbr>Prepare</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_cdk_.cdkpublishstack.html#onsynthesize" class="tsd-kind-icon">on<wbr>Synthesize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_cdk_.cdkpublishstack.html#onvalidate" class="tsd-kind-icon">on<wbr>Validate</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_cdk_.cdkpublishstack.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_auto_approve_.autoapprovestack.html#onprepare" class="tsd-kind-icon">on<wbr>Prepare</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_auto_approve_.autoapprovestack.html#onsynthesize" class="tsd-kind-icon">on<wbr>Synthesize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_auto_approve_.autoapprovestack.html#onvalidate" class="tsd-kind-icon">on<wbr>Validate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_auto_approve_.autoapprovestack.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
@@ -123,14 +124,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new CDKPublish<wbr>Stack<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Construct</span>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, config<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_cdk_.cdkpublishstackprops.html" class="tsd-signature-type">CDKPublishStackProps</a>, overrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WorkflowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_cdk_.cdkpublishstack.html" class="tsd-signature-type">CDKPublishStack</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Auto<wbr>Approve<wbr>Stack<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Construct</span>, overrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WorkflowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_auto_approve_.autoapprovestack.html" class="tsd-signature-type">AutoApproveStack</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides Stack.__constructor</p>
 								<ul>
-									<li>Defined in src/cdk.ts:25</li>
+									<li>Defined in src/auto-approve.ts:8</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -146,22 +147,6 @@
 									</div>
 								</li>
 								<li>
-									<h5>id: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Id of the job.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <a href="../interfaces/_cdk_.cdkpublishstackprops.html" class="tsd-signature-type">CDKPublishStackProps</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Optional configuration for the cdk publish stack.</p>
-										</div>
-									</div>
-								</li>
-								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> overrides: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WorkflowProps</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
@@ -170,7 +155,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_cdk_.cdkpublishstack.html" class="tsd-signature-type">CDKPublishStack</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_auto_approve_.autoapprovestack.html" class="tsd-signature-type">AutoApproveStack</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -316,10 +301,10 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_auto_approve_.html">&quot;auto-<wbr>approve&quot;</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_cdk_.html">&quot;cdk&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -365,30 +350,27 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="_cdk_.cdkpublishstack.html" class="tsd-kind-icon">CDKPublish<wbr>Stack</a>
+						<a href="_auto_approve_.autoapprovestack.html" class="tsd-kind-icon">Auto<wbr>Approve<wbr>Stack</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_cdk_.cdkpublishstack.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_auto_approve_.autoapprovestack.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_cdk_.cdkpublishstack.html#onprepare" class="tsd-kind-icon">on<wbr>Prepare</a>
+								<a href="_auto_approve_.autoapprovestack.html#onprepare" class="tsd-kind-icon">on<wbr>Prepare</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
-								<a href="_cdk_.cdkpublishstack.html#onsynthesize" class="tsd-kind-icon">on<wbr>Synthesize</a>
+								<a href="_auto_approve_.autoapprovestack.html#onsynthesize" class="tsd-kind-icon">on<wbr>Synthesize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_cdk_.cdkpublishstack.html#onvalidate" class="tsd-kind-icon">on<wbr>Validate</a>
+								<a href="_auto_approve_.autoapprovestack.html#onvalidate" class="tsd-kind-icon">on<wbr>Validate</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_cdk_.cdkpublishstack.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+								<a href="_auto_approve_.autoapprovestack.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_cdk_.cdkpublishstackprops.html" class="tsd-kind-icon">CDKPublish<wbr>Stack<wbr>Props</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
