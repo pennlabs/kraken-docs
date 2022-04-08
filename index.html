@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for @pennlabs/kraken">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -40,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,11 +50,6 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<ul class="tsd-breadcrumb">
-				<li>
-					<a href="globals.html">Globals</a>
-				</li>
-			</ul>
 			<h1>@pennlabs/kraken</h1>
 		</div>
 	</div>
@@ -88,95 +82,97 @@
 				<p>Most Penn Labs products follow the mold of a Django project in the <code>backend</code> directory and a React project in the <code>frontend</code> directory.</p>
 				<p>Since this is a common use-case, kraken provides an <code>LabsApplicationStack</code> that can easily configure the CI for this type of project.</p>
 				<p>To use an <code>LabsApplicationStack</code> stack, just replace the generated stack with:</p>
-				<pre><code class="language-javascript"><span class="hljs-keyword">new</span> LabsApplicationStack(app, {
-  <span class="hljs-attr">djangoProjectName</span>: <span class="hljs-string">&#x27;exampleDjangoProject&#x27;</span>,
-  <span class="hljs-attr">dockerImageBaseName</span>: <span class="hljs-string">&#x27;example-product&#x27;</span>,
-});</code></pre>
+				<pre><code class="language-javascript"><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">LabsApplicationStack</span><span style="color: #000000">(</span><span style="color: #001080">app</span><span style="color: #000000">, {</span>
+<span style="color: #000000">  </span><span style="color: #001080">djangoProjectName:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;exampleDjangoProject&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">dockerImageBaseName:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;example-product&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">});</span>
+</code></pre>
 				<p>This configuration will lint, test, build, publish docker images for, and deploy both the Django project and a React project. The published docker images will be named: <code>$dockerImageBaseName-backend</code> and <code>$dockerImageBaseName-frontend</code></p>
 				<a href="#different-configuration" id="different-configuration" style="color: inherit; text-decoration: none;">
 					<h3>Different Configuration</h3>
 				</a>
 				<p>If your repo is different from the normal 1 Django and 1 React project per repo, you can utilize the <code>DjangoProject</code> and <code>ReactProject</code> classes. For example, if you had a single Django project with multiple frontends, you could add something like the following inside of the generated Stack:</p>
-				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> workflow = <span class="hljs-keyword">new</span> Workflow(<span class="hljs-built_in">this</span>, <span class="hljs-string">&#x27;workflow&#x27;</span>, {
-  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Workflow&#x27;</span>,
-  <span class="hljs-attr">on</span>: <span class="hljs-string">&#x27;push&#x27;</span>,
-});
+				<pre><code class="language-javascript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">workflow</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Workflow</span><span style="color: #000000">(</span><span style="color: #0000FF">this</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;workflow&#039;</span><span style="color: #000000">, {</span>
+<span style="color: #000000">  </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Workflow&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">on:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;push&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">});</span>
 
-<span class="hljs-keyword">const</span> django = <span class="hljs-keyword">new</span> DjangoProject(workflow,
-  {
-    <span class="hljs-attr">projectName</span>: <span class="hljs-string">&#x27;djangoProject&#x27;</span>,
-    <span class="hljs-attr">path</span>: <span class="hljs-string">&#x27;backend&#x27;</span>,
-    <span class="hljs-attr">imageName</span>: <span class="hljs-string">&#x27;project-backend&#x27;</span>,
-  });
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">django</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">DjangoProject</span><span style="color: #000000">(</span><span style="color: #001080">workflow</span><span style="color: #000000">,</span>
+<span style="color: #000000">  {</span>
+<span style="color: #000000">    </span><span style="color: #001080">projectName:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;djangoProject&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">path:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;backend&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">imageName:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;project-backend&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  });</span>
 
-<span class="hljs-keyword">const</span> reactOne = <span class="hljs-keyword">new</span> ReactProject(workflow,
-  {
-    <span class="hljs-attr">id</span>: <span class="hljs-string">&#x27;one&#x27;</span>,
-    <span class="hljs-attr">path</span>: <span class="hljs-string">&#x27;frontendOne&#x27;</span>,
-    <span class="hljs-attr">imageName</span>: <span class="hljs-string">&#x27;project-frontendOne&#x27;</span>,
-  });
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">reactOne</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">ReactProject</span><span style="color: #000000">(</span><span style="color: #001080">workflow</span><span style="color: #000000">,</span>
+<span style="color: #000000">  {</span>
+<span style="color: #000000">    </span><span style="color: #001080">id:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;one&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">path:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;frontendOne&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">imageName:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;project-frontendOne&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  });</span>
 
-<span class="hljs-keyword">const</span> reactTwo = <span class="hljs-keyword">new</span> ReactProject(workflow,
-  {
-    <span class="hljs-attr">id</span>: <span class="hljs-string">&#x27;two&#x27;</span>,
-    <span class="hljs-attr">path</span>: <span class="hljs-string">&#x27;frontendTwo&#x27;</span>,
-    <span class="hljs-attr">imageName</span>: <span class="hljs-string">&#x27;project-frontendTwo&#x27;</span>,
-  });
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">reactTwo</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">ReactProject</span><span style="color: #000000">(</span><span style="color: #001080">workflow</span><span style="color: #000000">,</span>
+<span style="color: #000000">  {</span>
+<span style="color: #000000">    </span><span style="color: #001080">id:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;two&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">path:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;frontendTwo&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">imageName:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;project-frontendTwo&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  });</span>
 
-<span class="hljs-keyword">new</span> DeployJob(workflow, {},
-  {
-    <span class="hljs-attr">needs</span>: [django.publishJobId, reactOne.publishJobId, reactTwo.publishJobId],
-  });</code></pre>
+<span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">DeployJob</span><span style="color: #000000">(</span><span style="color: #001080">workflow</span><span style="color: #000000">, {},</span>
+<span style="color: #000000">  {</span>
+<span style="color: #000000">    </span><span style="color: #001080">needs:</span><span style="color: #000000"> [</span><span style="color: #001080">django</span><span style="color: #000000">.</span><span style="color: #001080">publishJobId</span><span style="color: #000000">, </span><span style="color: #001080">reactOne</span><span style="color: #000000">.</span><span style="color: #001080">publishJobId</span><span style="color: #000000">, </span><span style="color: #001080">reactTwo</span><span style="color: #000000">.</span><span style="color: #001080">publishJobId</span><span style="color: #000000">],</span>
+<span style="color: #000000">  });</span>
+</code></pre>
 				<p>This configuration will lint, test, build, publish docker images for the Django project as well as the two React projects and then finally deploy the application.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="modules.html">Modules</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_auto_approve_.html">&quot;auto-<wbr>approve&quot;</a>
+						<a href="modules/auto_approve.html">auto-<wbr>approve</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_cdk_.html">&quot;cdk&quot;</a>
+						<a href="modules/cdk.html">cdk</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_deploy_.html">&quot;deploy&quot;</a>
+						<a href="modules/deploy.html">deploy</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_django_.html">&quot;django&quot;</a>
+						<a href="modules/django.html">django</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_django_project_.html">&quot;django-<wbr>project&quot;</a>
+						<a href="modules/django_project.html">django-<wbr>project</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_docker_.html">&quot;docker&quot;</a>
+						<a href="modules/docker.html">docker</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_index_.html">&quot;index&quot;</a>
+						<a href="modules/index.html">index</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_integration_tests_.html">&quot;integration-<wbr>tests&quot;</a>
+						<a href="modules/integration_tests.html">integration-<wbr>tests</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_labs_application_.html">&quot;labs-<wbr>application&quot;</a>
+						<a href="modules/labs_application.html">labs-<wbr>application</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_postintegrationimagepublishjob_.html">&quot;postintegrationimagepublishjob&quot;</a>
+						<a href="modules/postintegrationimagepublishjob.html">postintegrationimagepublishjob</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_pypi_.html">&quot;pypi&quot;</a>
+						<a href="modules/pypi.html">pypi</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_react_.html">&quot;react&quot;</a>
+						<a href="modules/react.html">react</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_react_project_.html">&quot;react-<wbr>project&quot;</a>
+						<a href="modules/react_project.html">react-<wbr>project</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_utils_.html">&quot;utils&quot;</a>
+						<a href="modules/utils.html">utils</a>
 					</li>
 				</ul>
 			</nav>
